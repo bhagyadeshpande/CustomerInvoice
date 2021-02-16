@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      h4 {
+        color: rgb(138, 70, 70);
+      }
+      #depositID {
+        width: 100%;
+      }
+      #withdrawID {
+        width: 100%;
+      }
+      #output1 {
+        text-align: center;
+        font-weight: bold;
+      }
+      #output2 {
+        text-align: center;
+        font-weight: bold;
+      }
+      #output3 {
+        text-align: center;
+        font-weight: bold;
+      }
+      #output4 {
+        text-align: center;
+        font-weight: bold;
+      }
+      #output5 {
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="offset-4 col-4">
+          <h4>CUSTOMER INFORMATION</h4>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="cid">Customer ID</label>
+                <input
+                  type="number"
+                  id="cid"
+                  class="form-control"
+                  placeholder="ID"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="cname">Name</label>
+                <input
+                  type="text"
+                  id="cname"
+                  class="form-control"
+                  placeholder="Name"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="cdisc">Discount</label>
+                <input
+                  type="number"
+                  id="cdisc"
+                  class="form-control"
+                  placeholder="discount"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="offset-4 col-4">
+          <h4>INVOICE DETAILS</h4>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="iid">Invoice ID</label>
+                <input
+                  type="number"
+                  id="iid"
+                  class="form-control"
+                  placeholder="ID"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="amt">Amount</label>
+                <input
+                  type="number"
+                  id="amt"
+                  class="form-control"
+                  placeholder="amount"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-4 col-4">
+          <h4>ACCOUNT INFORMATION</h4>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="aid">Account ID</label>
+                <input
+                  type="number"
+                  id="aid"
+                  class="form-control"
+                  placeholder="Account ID"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="bal">Balance</label>
+                <input
+                  type="number"
+                  id="bal"
+                  class="form-control"
+                  placeholder="balance"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <button type="button" id="depositID" class="btn btn-info">
+                  Deposit
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <button type="button" id="withdrawID" class="btn btn-danger">
+                  Withdraw
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input
+        type="button"
+        id="button"
+        value="submit"
+        class="btn btn-success offset-4 col-4"
+      />
+    </div>
+    <br />
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <div id="output3"></div>
+    <div id="output4"></div>
+    <div id="output5"></div>
+    <script src="./public/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
